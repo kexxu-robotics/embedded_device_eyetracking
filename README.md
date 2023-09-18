@@ -10,11 +10,14 @@ Please follow these steps in order to make events emitted by your Kexxu Eye Trac
 
 1. Power on your Kexxu Eye Tracking Glasses
 2. Open the Arduino example project in the Arduino IDE
-3. Fill in your wifi configuration in the Arduino IDE
-4. Enter your Kexxu Eye Tracking Glasses' IP as the `mqtt_server` string. (The address can be found in the Kexxu Devices app)
-5. Compile and upload the Arduino project to your embedded device
-6. Open the Serial Monitor with a baud-rate of 115200
-7.  Follow the embedded devices' output. It should look something like  
+3. Fill in these details in the Arduino IDE:
+   1. `WIFI_SSID`: The name of your wifi
+   2. `WIFI_PSWD`: The wifi password
+   3. `DEVICE_ID`: The unique ID that belongs to your pair of Kexxu Eye Tracking Glasses. It will usually be written on the housing of your Kexxu Eye Tracking Glasses
+   4. `DEVICE_IP`: The local IP address of your Kexxu Eye Tracking Glasses. The address is displayed in the Kexxu Devices app.
+4. Compile and upload the Arduino project to your embedded device
+5. Open the Serial Monitor with a baud-rate of 115200
+6.  Follow the embedded devices' output. It should look something like  
     this:
     ```
     09:00:00.394 -> Waiting for WiFi... 
@@ -25,7 +28,7 @@ Please follow these steps in order to make events emitted by your Kexxu Eye Trac
     09:00:08.406 -> {"Id":xyzxyzxyz}
     09:00:08.406 -> Attempting MQTT connection...connected
     ```
-8.  After this output, the serial monitor should quickly fill with
+7.  After this output, the serial monitor should quickly fill with
     with eye tracking information similar to this:
     ```
     Message arrived on topic: devices/<DEVICE_ID>/eyetracking. Message: 
