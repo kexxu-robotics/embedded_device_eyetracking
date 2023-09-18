@@ -27,8 +27,11 @@ Please follow these steps in order to make events emitted by your Kexxu Eye Trac
     ```
 8.  After this output, the serial monitor should quickly fill with
     with eye tracking information similar to this:
+    ```
+    Message arrived on topic: devices/<DEVICE_ID>/eyetracking. Message: 
+    ```
     ```json
-    Message arrived on topic: devices/<DEVICE_ID>/eyetracking. Message: {"eye_left_pos_x":0.0,"eye_left_pos_y":0.0,"eye_right_pos_x":0.0,"eye_right_pos_y":0.0,"eye_top_pos_x":0.0,"eye_top_pos_y":0.0,"pupil_pos_x":-0.30000001192092896,"pupil_pos_y":0.35555556416511536,"pupil_rel_pos_x":-1.2332611083984375,"pupil_rel_pos_y":2.533367395401001,"timestamp_ms":"1695027209126"}
+    {"eye_left_pos_x":0.0,"eye_left_pos_y":0.0,"eye_right_pos_x":0.0,"eye_right_pos_y":0.0,"eye_top_pos_x":0.0,"eye_top_pos_y":0.0,"pupil_pos_x":-0.30000001192092896,"pupil_pos_y":0.35555556416511536,"pupil_rel_pos_x":-1.2332611083984375,"pupil_rel_pos_y":2.533367395401001,"timestamp_ms":"1695027209126"}
     {"eye_left_pos_x":0.0,"eye_left_pos_y":0.0,"eye_right_pos_x":0.0,"eye_right_pos_y":0.0,"eye_top_pos_x":0.0,"eye_top_pos_y":0.0,"pupil_pos_x":-0.30000001192092896,"pupil_pos_y":0.35555556416511536,"pupil_rel_pos_x":-1.2332611083984375,"pupil_rel_pos_y":2.533367395401001,"timestamp_ms":"1695027209126"}
     ```
 
